@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="clear">
+          <i class="fa fa-refresh"></i>
+        </div>
+        <div class="task-stats">
+          <div class="tasks-count">Tasks <span id="TasksCount">0</span></div>
+          <!-- <div class="tasks-completed">
+              Completed <span>0</span>
+            </div> -->
+        </div>
+        <div id="date"></div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="search"
+            class="form-control"
+            placeholder="search by task"
+          />
+        </div>
+      </div>
+      <div class="content">
+        <div>
+          <span class="no-message"></span>
+        </div>
+        <ul id="list"></ul>
+      </div>
+      <div class="add-to-do d-flex">
+        <!-- <i class="fa fa-plus-circle" id=plus></i> -->
+        <div class="form-group">
+          <button type="submit" id="plus" class="btn btn-primary">Add</button>
+        </div>
+        <input type="text" id="input" placeholder="Add a to-do" />
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
